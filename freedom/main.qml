@@ -20,18 +20,17 @@ ApplicationWindow {
         }
 
         UserInterface {
-            id: userinterface
+            id: userInterface
         }
 
         onCurrentIndexChanged: {
             if (currentItem == bookRack) {
-                tabBar.currentIndex = 0
+
+                console.log(tabBar.currentItem)
             }
-            if (currentItem == page1) {
+            if (currentItem == userInterface) {
                 tabBar.currentIndex = 1
             }
-
-
         }
     }
 
@@ -40,27 +39,21 @@ ApplicationWindow {
         width: parent.width
 
         Repeater {
-            model: ["First", "Second", "Third", "Fourth", "Fifth"]
+            model: ["BookRack", "UserInterface"]
 
             TabButton {
+                id: btn
                 text: modelData
+                objectName: modelData
                 display: AbstractButton.IconOnly
 
                 onClicked: {
-                    if (text === "First") {
+                    if (text === "BookRack") {
                         swipeView.currentIndex = 0
                     }
 
-                    if (text === "Second") {
+                    if (text === "UserInterface") {
                         swipeView.currentIndex = 1
-                    }
-
-                    if (text === "Third") {
-                        swipeView.currentIndex = 2
-                    }
-
-                    if (text === "Fourth") {
-                        swipeView.currentIndex = 3
                     }
                 }
             }
