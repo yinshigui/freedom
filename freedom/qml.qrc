@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>bookrack/BookRack.qml</file>
+        <file>userinterface/UserInterface.qml</file>
+    </qresource>
+</RCC>
