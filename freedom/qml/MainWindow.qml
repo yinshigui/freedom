@@ -8,8 +8,8 @@ import "./Windows" as Windows
 
 ApplicationWindow {
     id: window
-    width: 480
-    height: 640
+    width: Qt.platform.os === "android" ? Screen.width : 240
+    height: Qt.platform.os === "android" ? Screen.height : 320
     visible: true
     title: qsTr("freedom")
 
