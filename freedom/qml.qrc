@@ -1,12 +1,9 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/Controls/Button.qml</file>
-        <file>qml/Windows/BookShelf.qml</file>
-        <file>qml/MainWindow.qml</file>
-        <file>res/bookshelf.svg</file>
-        <file>qml/Windows/BookView.qml</file>
-        <file>qml/Windows/Book.qml</file>
-        <file>res/cover.jpg</file>
-        <file>res/cover.png</file>
+        <file>qml/App.qml</file>
+        <file>qml/BookShelf.qml</file>
+        <file>qml/BookShelfForm.ui.qml</file>
+        <file>qml/Person.qml</file>
+        <file>qml/PersonForm.ui.qml</file>
     </qresource>
 </RCC>
